@@ -7,7 +7,7 @@ from core.models import PermissionLevel
 import datetime
 
 class Rename(commands.Cog):
-    """Rename a thread!"""
+    """Rename a thread! (Edit by Nihilus to front-append channel names)"""
 
     def __init__(self, bot):
         self.bot = bot
