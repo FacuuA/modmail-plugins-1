@@ -21,7 +21,7 @@ class Rename(commands.Cog):
             await ctx.message.add_reaction('⏰')
             current = ctx.channel.name
             new = request + current
-            await ctx.channel.edit(name = request) # Edit channel name.
+            await ctx.channel.edit(name = new) # Edit channel name.
             
             await ctx.message.clear_reactions()
             await ctx.message.add_reaction('✅')
