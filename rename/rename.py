@@ -19,7 +19,8 @@ class Rename(commands.Cog):
     async def rename(self, ctx, *, request):
         try:
             await ctx.message.add_reaction('⏰')
-            
+            current = ctx.channel.name
+            new = request + current
             await ctx.channel.edit(name = request) # Edit channel name.
             
             await ctx.message.clear_reactions()
